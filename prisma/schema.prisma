@@ -6,7 +6,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../src/generated/prisma"
 }
 
 datasource db {
@@ -20,19 +19,19 @@ enum ActorRole {
   TEACHER
 }
 
-enum UserSex {
-  MALE
-  FEMALE
-  NON_BINARY
-  UNDISCLOSED
-}
-
 enum Day {
   MONDAY
   TUESDAY
   WEDNESDAY
   THURSDAY
   FRIDAY
+}
+
+enum UserSex {
+  MALE
+  FEMALE
+  NON_BINARY
+  UNDISCLOSED
 }
 
 model Actor {
